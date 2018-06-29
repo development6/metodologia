@@ -1,0 +1,206 @@
+/* Back to Top */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
+table, th{table-layout:auto;}
+table{width:100%; margin-bottom:15px;}
+th, td{padding:5px 8px;}
+td{border-width:0 1px;} 
+
+
+/* Gallery
+--------------------------------------------------------------------------------------------------------------- */
+#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery figure figcaption{display:block; width:100%; clear:both;}
+#gallery li{margin-bottom:30px;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#D3D3D3; background-color:#212121;}
+a{color:#C0AB8F;}
+a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#C0AB8F;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{background-color:rgba(0,0,0,.3);}
+.overlay.light::after{background-color:rgba(255,255,255,.55);}
+
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#C0AB8F; border-color:#C0AB8F;}
+.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row0, .row0 a{}
+.row1{color:#FFFFFF; background-color:rgba(0,0,0,.3);}
+.row2{color:#5F5F5F; background-color:#F7F7F7;}
+.row3{color:#5F5F5F; background-color:#FFFFFF;}
+.row4{color:#D3D3D3; background-color:#2D2D2D;}
+.row5, .row5 a{color:#D3D3D3; background-color:#212121;}
+
+
+/* Top Bar */
+#topbar, #topbar ul li{border-color:rgba(255,255,255,.3);}
+#topbar > div:last-of-type li:first-child a{color:#C0AB8F;}
+
+
+/* Header */
+#header #logo a{color:inherit;}
+
+
+/* Page Intro */
+#pageintro .heading::after{background-color:#C0AB8F;}
+
+
+/* Content Area */
+.services li article{border-color:#D7D7D7;}
+.services li article i{color:#FFFFFF; background:#D7D7D7;}
+.services li article:hover i{background:#C0AB8F;}
+.services li article:hover, .services li article:hover i{box-shadow:2px 2px rgba(0,0,0,.2);}
+
+.element article .txtwrap{color:#5F5F5F; background-color:#FFFFFF;}
+.team.element article{border-color:transparent;}
+.team.element article:hover{border-color:#C0AB8F;}
+.team.element article .txtwrap{color:inherit; background-color:#F7F7F7;}
+
+.iconlist li{background-color:rgba(255,255,255,.1);}
+.iconlist li a{color:inherit;}
+.iconlist li:hover{color:#5F5F5F; background-color:#FFFFFF;}
+.iconlist li:hover a i{color:#FFFFFF; background-color:#C0AB8F;}
+
+.testimonial blockquote::before{color:rgba(255,255,255,.1);}
+
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.2);}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#C0AB8F; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#C0AB8F;}
+#mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.3);}
+
+#breadcrumb ul{border-color:rgba(255,255,255,.2);}
+#breadcrumb a{color:inherit; background-color:inherit;}
+#breadcrumb li:last-child a{color:#C0AB8F;}
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#C0AB8F;}
+
+.pagination a, .pagination strong{border-color:#D7D7D7;}
+.pagination .current *{color:#FFFFFF; background-color:#C0AB8F;}
+
+#backtotop{color:#FFFFFF; background-color:#C0AB8F;}
+
+
+/* Tables + Comments */
+table, th, td, #comments .avatar, #comments input, #comments textarea{border-color:#D7D7D7;}
+#comments input:focus, #comments textarea:focus, #comments *:required:focus{border-color:#C0AB8F;}
+th{color:#FFFFFF; background-color:#373737;}
+tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#FBFBFB;}
+tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
+table a, #comments a{background-color:inherit;}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#header{padding:30px 0;}
+	#header #logo{margin-top:3px;}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#breadcrumb{}
+
+	.container{}
+	#comments input[type="reset"]{margin-top:10px;}
+	.pagination li{display:inline-block; margin:0 5px 5px 0;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (min-width:750px) and (max-width:900px){
+	.iconlist li > :last-child{margin-top:8px;}
+}
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 15px 0;}
+
+	#pageintro{padding:120px 0;}
+	#pageintro .heading{font-size:3rem;}
+	#pageintro .txtwrap{max-width:none;}
+
+	#footer{padding-bottom:50px;}/* Not neccessary - just looks better */
+}
+
+
+@media screen and (max-width:450px){
+	.iconlist li > :last-child{margin-top:5px;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+
+	#pageintro .heading{font-size:2rem;}
+}
